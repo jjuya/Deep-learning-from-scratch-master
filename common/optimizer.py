@@ -75,7 +75,7 @@ class AdaGrad:
             params[key] -= self.lr * grads[key] / (np.sqrt(self.h[key]) + 1e-7)
 
 
-class RMSprop:
+class RMSprop: # 최근의 기울기를 더 많이 반영
 
     """RMSprop"""
 
